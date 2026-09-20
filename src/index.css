@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --brand-gradient: linear-gradient(90deg, #ff5722 0%, #d81b7e 50%, #7c3aed 100%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.brand-gradient {
+  background-image: var(--brand-gradient);
+}
+
+.brand-gradient-text {
+  background-image: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
