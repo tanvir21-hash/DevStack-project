@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
-
+import Banner from "./components/Banner";
 
 function App() {
   const [technologies, setTechnologies] = useState<ITech[]>([]);
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Nav />
-      
+      <Banner />
     </>
   );
 }
