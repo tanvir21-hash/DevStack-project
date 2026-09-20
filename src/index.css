@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-ink: #0f172a;
+  --color-body: #475569;
+  --color-muted: #64748b;
+  --color-faint: #94a3b8;
+  --color-accent: #db2777;
+  --color-line: #f1f5f9;
+  --color-surface: #f8fafc;
+  --color-dark-btn: #0a0f1d;
+}
+
 :root {
   --brand-gradient: linear-gradient(90deg, #ff5722 0%, #d81b7e 50%, #7c3aed 100%);
 }
