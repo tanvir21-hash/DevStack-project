@@ -21,7 +21,7 @@ const badgeStyles: Record<Category, string> = {
 const TechCard = ({ tech, isAdded, onAdd }: ITechCardProps) => {
   return (
     <div className="flex flex-col rounded-2xl border border-line bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-500/10">
-      {/* Icon + badge */}
+
       <div className="flex items-start justify-between">
         <img src={tech.icon} alt={tech.name} className="h-10 w-10 object-contain" />
         <span
@@ -31,13 +31,11 @@ const TechCard = ({ tech, isAdded, onAdd }: ITechCardProps) => {
         </span>
       </div>
 
-      {/* Name + description */}
       <h3 className="mt-4 text-lg font-bold text-ink">{tech.name}</h3>
       <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">
         {tech.description}
       </p>
 
-      {/* Meta row */}
       <div className="mt-4 flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5 text-xs whitespace-nowrap">
         <span className="rounded-md bg-surface px-2.5 py-1 font-medium text-body">
           {tech.category}
@@ -49,7 +47,6 @@ const TechCard = ({ tech, isAdded, onAdd }: ITechCardProps) => {
         </span>
       </div>
 
-      {/* Action */}
       <button
         onClick={() => onAdd(tech)}
         disabled={isAdded}
