@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 function App() {
   const [technologies, setTechnologies] = useState<ITech[]>([]);
@@ -23,6 +24,7 @@ function App() {
     <>
       <Nav />
       <Banner />
+      <Footer />
     </>
   );
 }
